@@ -7,6 +7,7 @@ pystats.py implements mean, variance (population, divides by n), minmax, count_o
 test_equivalence.py ran 76 checks and all passed (equivalence_results.txt). They cover small datasets, single and constant values, negatives, mixed int and float, tuples, seeded random data at 1,000, 100,000 and 1,000,000 values, empty input, seven kinds of invalid input, bad bounds and return types. Comparison was exact equality, not a tolerance, because both versions add in the same order and the build does not use -ffast-math. Not covered: NaN, where comparison order changes results, and integers above 2^53, which the C version converts to double.
 
 ## Performance
+Timings were measured on a Dell Latitude 7490 with Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz, running Ubuntu Linux and Python 3.12.3.
 Averages over 50, 10 and 3 repeats for 1,000, 100,000 and 1,000,000 values (benchmark_results.csv, speedup_chart.png):
 
 | Operation | 1,000 | 100,000 | 1,000,000 |
