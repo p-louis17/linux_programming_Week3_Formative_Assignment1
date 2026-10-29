@@ -1,0 +1,65 @@
+15861 execve("./backup_tool", ["./backup_tool", "testdata/report.txt", "backup_out"], 0x7ffc8de0b368 /* 54 vars */) = 0
+15861 brk(NULL)                         = 0x574ce6e07000
+15861 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e0dcfe5d000
+15861 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+15861 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+15861 fstat(3, {st_mode=S_IFREG|0644, st_size=109159, ...}) = 0
+15861 mmap(NULL, 109159, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7e0dcfe42000
+15861 close(3)                          = 0
+15861 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+15861 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+15861 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+15861 fstat(3, {st_mode=S_IFREG|0755, st_size=2129424, ...}) = 0
+15861 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+15861 mmap(NULL, 2174352, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7e0dcfc00000
+15861 mmap(0x7e0dcfc28000, 1609728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7e0dcfc28000
+15861 mmap(0x7e0dcfdb1000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b1000) = 0x7e0dcfdb1000
+15861 mmap(0x7e0dcfe00000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ff000) = 0x7e0dcfe00000
+15861 mmap(0x7e0dcfe06000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7e0dcfe06000
+15861 close(3)                          = 0
+15861 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e0dcfe3f000
+15861 arch_prctl(ARCH_SET_FS, 0x7e0dcfe3f740) = 0
+15861 set_tid_address(0x7e0dcfe3fa10)   = 15861
+15861 set_robust_list(0x7e0dcfe3fa20, 24) = 0
+15861 rseq(0x7e0dcfe40060, 0x20, 0, 0x53053053) = 0
+15861 mprotect(0x7e0dcfe00000, 16384, PROT_READ) = 0
+15861 mprotect(0x574ce6d7b000, 4096, PROT_READ) = 0
+15861 mprotect(0x7e0dcfe9d000, 8192, PROT_READ) = 0
+15861 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+15861 munmap(0x7e0dcfe42000, 109159)    = 0
+15861 openat(AT_FDCWD, "backup.log", O_WRONLY|O_CREAT|O_APPEND, 0644) = 3
+15861 write(3, "[1] backup started: source=testd"..., 62) = 62
+15861 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+15861 getrandom("\x9e\xa9\x94\x54\xd3\xe7\xb0\x74", 8, GRND_NONBLOCK) = 8
+15861 brk(NULL)                         = 0x574ce6e07000
+15861 brk(0x574ce6e28000)               = 0x574ce6e28000
+15861 write(1, "Log file: backup.log ... OK\n", 28) = 28
+15861 mkdir("backup_out", 0755)         = -1 EEXIST (File exists)
+15861 newfstatat(AT_FDCWD, "backup_out", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+15861 write(3, "[2] backup directory backup_out "..., 38) = 38
+15861 write(1, "Backup directory backup_out ... "..., 35) = 35
+15861 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7e0dcfe3fa10) = 15862
+15861 wait4(15862,  <unfinished ...>
+15862 set_robust_list(0x7e0dcfe3fa20, 24) = 0
+15862 getpid()                          = 15862
+15862 write(3, "[3] child 15862: copying testdat"..., 70) = 70
+15862 openat(AT_FDCWD, "testdata/report.txt", O_RDONLY) = 4
+15862 openat(AT_FDCWD, "backup_out/report.txt", O_WRONLY|O_CREAT|O_TRUNC, 0644) = 5
+15862 read(4, "important data\n", 4096) = 15
+15862 write(5, "important data\n", 15)  = 15
+15862 read(4, "", 4096)                 = 0
+15862 close(4)                          = 0
+15862 close(5)                          = 0
+15862 getpid()                          = 15862
+15862 write(3, "[4] child 15862: copy OK, 15 byt"..., 35) = 35
+15862 close(3)                          = 0
+15862 exit_group(0)                     = ?
+15862 +++ exited with 0 +++
+15861 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 15862
+15861 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=15862, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+15861 write(3, "[3] parent: child 15862 finished"..., 36) = 36
+15861 write(1, "Copy testdata/report.txt -> back"..., 57) = 57
+15861 write(3, "[4] backup finished with status "..., 34) = 34
+15861 close(3)                          = 0
+15861 exit_group(0)                     = ?
+15861 +++ exited with 0 +++

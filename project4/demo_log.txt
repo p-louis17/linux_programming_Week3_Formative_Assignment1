@@ -1,0 +1,27 @@
+=== Run 1: SIGUSR1, SIGUSR2, SIGINT ===
+[Server Controller] Started with PID 24387, state NORMAL
+--- 07:18:46 kill -USR1 ---
+[Server Controller] STATUS REPORT: state=NORMAL, pid=24387
+--- 07:18:47 kill -USR2 ---
+[Server Controller] Mode changed to MAINTENANCE
+--- 07:18:48 kill -USR1 ---
+[Server Controller] STATUS REPORT: state=MAINTENANCE, pid=24387
+[Server Controller] Service in MAINTENANCE mode...
+--- 07:18:54 kill -USR2 ---
+[Server Controller] Mode changed to NORMAL
+[Server Controller] Service running normally...
+--- 07:18:55 kill -USR1 ---
+[Server Controller] STATUS REPORT: state=NORMAL, pid=24387
+--- 07:18:56 kill -INT ---
+[Server Controller] Graceful shutdown: SIGINT received, cleaning up...
+[Server Controller] Cleanup complete. Goodbye.
+exit status after SIGINT: 0
+PID file after SIGINT: removed
+
+=== Run 2: SIGTERM ===
+[Server Controller] Started with PID 24544, state NORMAL
+[Server Controller] Service running normally...
+--- 07:19:03 kill -TERM ---
+[Server Controller] EMERGENCY TERMINATION: SIGTERM received, exiting immediately.
+exit status after SIGTERM: 1
+PID file after SIGTERM: still exists

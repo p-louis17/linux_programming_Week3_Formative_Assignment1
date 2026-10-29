@@ -1,0 +1,78 @@
+PASS  small ints: mean
+PASS  small ints: variance
+PASS  small ints: minmax
+PASS  small ints: count_outside
+PASS  small ints: normalize
+PASS  single value: mean
+PASS  single value: variance
+PASS  single value: minmax
+PASS  single value: count_outside
+PASS  single value: normalize
+PASS  two values: mean
+PASS  two values: variance
+PASS  two values: minmax
+PASS  two values: count_outside
+PASS  two values: normalize
+PASS  negatives: mean
+PASS  negatives: variance
+PASS  negatives: minmax
+PASS  negatives: count_outside
+PASS  negatives: normalize
+PASS  constant: mean
+PASS  constant: variance
+PASS  constant: minmax
+PASS  constant: count_outside
+PASS  constant: normalize
+PASS  mixed int/float: mean
+PASS  mixed int/float: variance
+PASS  mixed int/float: minmax
+PASS  mixed int/float: count_outside
+PASS  mixed int/float: normalize
+PASS  gauss n=1000: mean
+PASS  gauss n=1000: variance
+PASS  gauss n=1000: minmax
+PASS  gauss n=1000: count_outside
+PASS  gauss n=1000: normalize
+PASS  gauss n=100000: mean
+PASS  gauss n=100000: variance
+PASS  gauss n=100000: minmax
+PASS  gauss n=100000: count_outside
+PASS  gauss n=100000: normalize
+PASS  gauss n=1000000: mean
+PASS  gauss n=1000000: variance
+PASS  gauss n=1000000: minmax
+PASS  gauss n=1000000: count_outside
+PASS  gauss n=1000000: normalize
+PASS  random ints n=100000: mean
+PASS  random ints n=100000: variance
+PASS  random ints n=100000: minmax
+PASS  random ints n=100000: count_outside
+PASS  random ints n=100000: normalize
+PASS  tuple: mean
+PASS  tuple: variance
+PASS  tuple: minmax
+PASS  tuple: count_outside
+PASS  tuple: normalize
+PASS  empty list: mean
+PASS  empty list: variance
+PASS  empty list: minmax
+PASS  empty list: count_outside
+PASS  empty list: normalize
+PASS  invalid (string item): mean
+PASS  invalid (string item): normalize
+PASS  invalid (None item): mean
+PASS  invalid (None item): normalize
+PASS  invalid (bool item): mean
+PASS  invalid (bool item): normalize
+PASS  invalid (whole string): mean
+PASS  invalid (whole string): normalize
+PASS  invalid (bytes): mean
+PASS  invalid (bytes): normalize
+PASS  invalid (not a sequence): mean
+PASS  invalid (not a sequence): normalize
+PASS  invalid (nested list): mean
+PASS  invalid (nested list): normalize
+PASS  bounds low>high
+PASS  return types match
+
+76 passed, 0 failed

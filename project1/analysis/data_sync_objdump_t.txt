@@ -1,0 +1,62 @@
+
+data_sync:     file format elf64-x86-64
+
+SYMBOL TABLE:
+0000000000000000 l    df *ABS*	0000000000000000              Scrt1.o
+000000000000038c l     O .note.ABI-tag	0000000000000020              __abi_tag
+0000000000000000 l    df *ABS*	0000000000000000              crtstuff.c
+0000000000001210 l     F .text	0000000000000000              deregister_tm_clones
+0000000000001240 l     F .text	0000000000000000              register_tm_clones
+0000000000001280 l     F .text	0000000000000000              __do_global_dtors_aux
+0000000000004028 l     O .bss	0000000000000001              completed.0
+0000000000003d60 l     O .fini_array	0000000000000000              __do_global_dtors_aux_fini_array_entry
+00000000000012c0 l     F .text	0000000000000000              frame_dummy
+0000000000003d58 l     O .init_array	0000000000000000              __frame_dummy_init_array_entry
+0000000000000000 l    df *ABS*	0000000000000000              scanner.c
+0000000000001461 l     F .text	000000000000003f              compare_names
+0000000000000000 l    df *ABS*	0000000000000000              compare.c
+0000000000000000 l    df *ABS*	0000000000000000              main_sync.c
+0000000000000000 l    df *ABS*	0000000000000000              crtstuff.c
+0000000000002298 l     O .eh_frame	0000000000000000              __FRAME_END__
+0000000000000000 l    df *ABS*	0000000000000000              
+0000000000003d68 l     O .dynamic	0000000000000000              _DYNAMIC
+00000000000020c0 l       .eh_frame_hdr	0000000000000000              __GNU_EH_FRAME_HDR
+0000000000003f58 l     O .got	0000000000000000              _GLOBAL_OFFSET_TABLE_
+0000000000000000       F *UND*	0000000000000000              free@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              __libc_start_main@GLIBC_2.34
+0000000000000000  w      *UND*	0000000000000000              _ITM_deregisterTMCloneTable
+0000000000004000  w      .data	0000000000000000              data_start
+0000000000000000       F *UND*	0000000000000000              qsort@GLIBC_2.2.5
+00000000000012fb g     F .text	0000000000000068              filelist_free
+0000000000004010 g       .data	0000000000000000              _edata
+0000000000000000       F *UND*	0000000000000000              opendir@GLIBC_2.2.5
+0000000000001908 g     F .fini	0000000000000000              .hidden _fini
+0000000000000000       F *UND*	0000000000000000              __stack_chk_fail@GLIBC_2.4
+00000000000015ca g     F .text	0000000000000161              find_missing
+0000000000000000       F *UND*	0000000000000000              printf@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              closedir@GLIBC_2.2.5
+0000000000004000 g       .data	0000000000000000              __data_start
+0000000000000000       F *UND*	0000000000000000              strcmp@GLIBC_2.2.5
+0000000000000000       F *UND*	0000000000000000              fprintf@GLIBC_2.2.5
+0000000000000000  w      *UND*	0000000000000000              __gmon_start__
+0000000000004008 g     O .data	0000000000000000              .hidden __dso_handle
+00000000000012c9 g     F .text	0000000000000032              filelist_init
+0000000000002000 g     O .rodata	0000000000000004              _IO_stdin_used
+0000000000000000       F *UND*	0000000000000000              readdir@GLIBC_2.2.5
+0000000000004030 g       .bss	0000000000000000              _end
+00000000000011e0 g     F .text	0000000000000026              _start
+00000000000014a0 g     F .text	000000000000012a              scan_directory
+0000000000000000       F *UND*	0000000000000000              realloc@GLIBC_2.2.5
+0000000000004020 g       .bss	0000000000000000              __bss_start
+000000000000172b g     F .text	00000000000001db              main
+0000000000000000       F *UND*	0000000000000000              perror@GLIBC_2.2.5
+0000000000001363 g     F .text	00000000000000fe              filelist_add
+0000000000000000       F *UND*	0000000000000000              fwrite@GLIBC_2.2.5
+0000000000004010 g     O .data	0000000000000000              .hidden __TMC_END__
+0000000000000000  w      *UND*	0000000000000000              _ITM_registerTMCloneTable
+0000000000000000       F *UND*	0000000000000000              strdup@GLIBC_2.2.5
+0000000000000000  w    F *UND*	0000000000000000              __cxa_finalize@GLIBC_2.2.5
+0000000000001000 g     F .init	0000000000000000              .hidden _init
+0000000000004020 g     O .bss	0000000000000008              stderr@GLIBC_2.2.5
+
+

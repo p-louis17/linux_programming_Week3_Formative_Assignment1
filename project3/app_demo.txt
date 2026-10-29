@@ -1,0 +1,30 @@
+implementation: python, values: 1000
+mean: 49.817306915192226
+variance: 103.85545908321848
+minmax: (18.454568538756178, 87.52058743065331)
+count_outside: 53
+normalize: [0.43588, 0.431709, 0.440626, ..., 0.570637, 0.72788, 0.36969] (1000 values)
+implementation: c, values: 1000
+mean: 49.817306915192226
+variance: 103.85545908321848
+minmax: (18.454568538756178, 87.52058743065331)
+count_outside: 53
+normalize: [0.43588, 0.431709, 0.440626, ..., 0.570637, 0.72788, 0.36969] (1000 values)
+implementation: python, values: 0
+mean: ValueError: mean of empty dataset
+variance: ValueError: variance of empty dataset
+minmax: ValueError: minmax of empty dataset
+count_outside: 0
+normalize: ValueError: normalize of empty dataset
+implementation: c, values: 0
+mean: ValueError: mean of empty dataset
+variance: ValueError: variance of empty dataset
+minmax: ValueError: minmax of empty dataset
+count_outside: 0
+normalize: ValueError: normalize of empty dataset
+implementation: c, values: 1000000
+mean: 49.98452469911516   [10.961 ms]
+variance: 99.9401574230228   [11.635 ms]
+minmax: (-1.025894294308614, 99.2749101902847)   [7.119 ms]
+count_outside: 45349   [7.026 ms]
+normalize: [0.494363, 0.49149, 0.49763, ..., 0.383616, 0.373667, 0.475509] (1000000 values)   [39.553 ms]

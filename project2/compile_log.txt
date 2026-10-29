@@ -1,0 +1,4 @@
+gcc -std=gnu11 -Wall -Wextra -Iinclude -c src/logger.c -o build/logger.o
+gcc -std=gnu11 -Wall -Wextra -Iinclude -c src/fileops.c -o build/fileops.o
+gcc -std=gnu11 -Wall -Wextra -Iinclude -c src/backup_tool.c -o build/backup_tool.o
+gcc build/logger.o build/fileops.o build/backup_tool.o -o backup_tool

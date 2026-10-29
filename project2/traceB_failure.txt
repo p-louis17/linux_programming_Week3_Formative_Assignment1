@@ -1,0 +1,59 @@
+12855 17:07:16.488638 execve("./backup_tool", ["./backup_tool", "testdata/missing.txt", "backup_out"], 0x7ffdce27dc20 /* 54 vars */) = 0
+12855 17:07:16.489514 brk(NULL)         = 0x5f06ad89c000
+12855 17:07:16.489666 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7769a1b96000
+12855 17:07:16.489781 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+12855 17:07:16.490028 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+12855 17:07:16.490138 fstat(3, {st_mode=S_IFREG|0644, st_size=109159, ...}) = 0
+12855 17:07:16.490224 mmap(NULL, 109159, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7769a1b7b000
+12855 17:07:16.490311 close(3)          = 0
+12855 17:07:16.490521 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+12855 17:07:16.490652 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+12855 17:07:16.490768 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+12855 17:07:16.490901 fstat(3, {st_mode=S_IFREG|0755, st_size=2129424, ...}) = 0
+12855 17:07:16.491051 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+12855 17:07:16.491199 mmap(NULL, 2174352, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7769a1800000
+12855 17:07:16.491543 mmap(0x7769a1828000, 1609728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7769a1828000
+12855 17:07:16.491743 mmap(0x7769a19b1000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b1000) = 0x7769a19b1000
+12855 17:07:16.491831 mmap(0x7769a1a00000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ff000) = 0x7769a1a00000
+12855 17:07:16.491920 mmap(0x7769a1a06000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7769a1a06000
+12855 17:07:16.492010 close(3)          = 0
+12855 17:07:16.492093 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7769a1b78000
+12855 17:07:16.492196 arch_prctl(ARCH_SET_FS, 0x7769a1b78740) = 0
+12855 17:07:16.492264 set_tid_address(0x7769a1b78a10) = 12855
+12855 17:07:16.492328 set_robust_list(0x7769a1b78a20, 24) = 0
+12855 17:07:16.492398 rseq(0x7769a1b79060, 0x20, 0, 0x53053053) = 0
+12855 17:07:16.492578 mprotect(0x7769a1a00000, 16384, PROT_READ) = 0
+12855 17:07:16.492692 mprotect(0x5f06ab62c000, 4096, PROT_READ) = 0
+12855 17:07:16.492772 mprotect(0x7769a1bd6000, 8192, PROT_READ) = 0
+12855 17:07:16.492865 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+12855 17:07:16.492956 munmap(0x7769a1b7b000, 109159) = 0
+12855 17:07:16.493062 openat(AT_FDCWD, "backup.log", O_WRONLY|O_CREAT|O_APPEND, 0644) = 3
+12855 17:07:16.493214 write(3, "[1] backup started: source=testd"..., 63) = 63
+12855 17:07:16.493320 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+12855 17:07:16.493444 getrandom("\x2d\xc2\xb8\x04\x86\x7c\x22\x71", 8, GRND_NONBLOCK) = 8
+12855 17:07:16.493546 brk(NULL)         = 0x5f06ad89c000
+12855 17:07:16.493617 brk(0x5f06ad8bd000) = 0x5f06ad8bd000
+12855 17:07:16.493707 write(1, "Log file: backup.log ... OK\n", 28) = 28
+12855 17:07:16.493873 mkdir("backup_out", 0755) = 0
+12855 17:07:16.494026 write(3, "[2] backup directory backup_out "..., 38) = 38
+12855 17:07:16.494120 write(1, "Backup directory backup_out ... "..., 35) = 35
+12855 17:07:16.495592 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7769a1b78a10) = 12857
+12857 17:07:16.495816 set_robust_list(0x7769a1b78a20, 24 <unfinished ...>
+12855 17:07:16.495846 wait4(12857,  <unfinished ...>
+12857 17:07:16.495867 <... set_robust_list resumed>) = 0
+12857 17:07:16.495940 getpid()          = 12857
+12857 17:07:16.496067 write(3, "[3] child 12857: copying testdat"..., 72) = 72
+12857 17:07:16.496224 openat(AT_FDCWD, "testdata/missing.txt", O_RDONLY) = -1 ENOENT (No such file or directory)
+12857 17:07:16.496383 getpid()          = 12857
+12857 17:07:16.496457 write(3, "[4] child 12857: copy FAILED: No"..., 56) = 56
+12857 17:07:16.496565 close(3)          = 0
+12857 17:07:16.496712 exit_group(1)     = ?
+12857 17:07:16.496911 +++ exited with 1 +++
+12855 17:07:16.496939 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 12857
+12855 17:07:16.496998 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12857, si_uid=1000, si_status=1, si_utime=0, si_stime=0} ---
+12855 17:07:16.497062 write(3, "[3] parent: child 12857 exited w"..., 45) = 45
+12855 17:07:16.497176 write(2, "Copy testdata/missing.txt -> bac"..., 80) = 80
+12855 17:07:16.497266 write(3, "[4] backup finished with status "..., 34) = 34
+12855 17:07:16.497367 close(3)          = 0
+12855 17:07:16.497488 exit_group(1)     = ?
+12855 17:07:16.497685 +++ exited with 1 +++

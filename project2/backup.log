@@ -1,0 +1,18 @@
+[1] backup started: source=testdata/missing.txt dir=backup_out
+[2] backup directory backup_out ready
+[3] child 12857: copying testdata/missing.txt to backup_out/missing.txt
+[4] child 12857: copy FAILED: No such file or directory
+[3] parent: child 12857 exited with status 1
+[4] backup finished with status 1
+[1] backup started: source=testdata/missing.txt dir=backup_out
+[2] backup directory backup_out ready
+[3] child 15522: copying testdata/missing.txt to backup_out/missing.txt
+[4] child 15522: copy FAILED: No such file or directory
+[3] parent: child 15522 exited with status 1
+[4] backup finished with status 1
+[1] backup started: source=testdata/report.txt dir=backup_out
+[2] backup directory backup_out ready
+[3] child 15862: copying testdata/report.txt to backup_out/report.txt
+[4] child 15862: copy OK, 15 bytes
+[3] parent: child 15862 finished OK
+[4] backup finished with status 0

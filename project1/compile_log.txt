@@ -1,0 +1,9 @@
+gcc -std=c11 -Wall -Wextra -Iinclude -c src/scanner.c -o build/scanner.o
+gcc -std=c11 -Wall -Wextra -Iinclude -c src/compare.c -o build/compare.o
+gcc -std=c11 -Wall -Wextra -Iinclude -c src/main_sync.c -o build/main_sync.o
+gcc build/scanner.o build/compare.o build/main_sync.o -o data_sync
+gcc -std=c11 -Wall -Wextra -Iinclude -c src/logger.c -o build/logger.o
+gcc -std=c11 -Wall -Wextra -Iinclude -c src/metadata.c -o build/metadata.o
+gcc -std=c11 -Wall -Wextra -Iinclude -c src/checksum.c -o build/checksum.o
+gcc -std=c11 -Wall -Wextra -Iinclude -c src/main_sync_v2.c -o build/main_sync_v2.o
+gcc build/scanner.o build/compare.o build/logger.o build/metadata.o build/checksum.o build/main_sync_v2.o -o data_sync_v2

@@ -1,0 +1,18 @@
+     size operation       python (ms)     C (ms)   speedup
+     1000 mean                  0.185      0.007     26.3x
+     1000 variance              0.353      0.008     44.2x
+     1000 minmax                0.163      0.007     24.3x
+     1000 count_outside         0.160      0.007     24.3x
+     1000 normalize             0.349      0.025     13.8x
+   100000 mean                 17.815      0.663     26.9x
+   100000 variance             35.373      0.754     46.9x
+   100000 minmax               15.555      0.773     20.1x
+   100000 count_outside        15.964      0.640     24.9x
+   100000 normalize            34.955      3.479     10.0x
+  1000000 mean                168.215      8.061     20.9x
+  1000000 variance            354.207      8.289     42.7x
+  1000000 minmax              159.986      7.653     20.9x
+  1000000 count_outside       160.528      7.159     22.4x
+  1000000 normalize           457.188     62.520      7.3x
+
+Saved benchmark_results.csv
