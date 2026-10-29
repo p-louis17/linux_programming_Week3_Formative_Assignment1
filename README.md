@@ -1,13 +1,13 @@
 # Week 3 Formative Assignment
 
-Four projects on Linux internals: ELF forensics, system call tracing, a CPython C extension, and a signal driven service. This file explains how to build and run everything. The combined written report is the exported document `Combined_Report.docx` (or `.pdf`) in the root folder.
+Four projects on Linux internals: ELF forensics, system call tracing, a CPython C extension, and a signal driven service. This file explains how to build and run everything. The combined written report is the exported document `LouisPascal_Week3_Formative_Assignment1.pdf` (or `.pdf`) in the root folder.
 
 ## Repository layout
 
 ```
 Week3_Formative_Assignment1/
   README.md
-  Combined_Report.docx   combined report for all four projects
+  LouisPascal_Week3_Formative_Assignment1.pdf
   project1/   ELF forensics (data_sync, data_sync_v2)
   project2/   backup_tool and strace traces
   project3/   faststats C extension, application, tests, benchmark
