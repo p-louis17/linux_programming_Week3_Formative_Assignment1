@@ -29,7 +29,7 @@ Install on Ubuntu or Debian:
 sudo apt install build-essential strace python3-dev python3-setuptools python3-matplotlib
 ```
 
-Makefile recipe lines must start with a real tab character, not spaces.
+Makefile recipe lines must start with a real tab character, not spaces
 
 ## Project 1: ELF forensics
 
